@@ -5,5 +5,18 @@ description = "Student Performance Analysis and Model Training"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "jupyter>=1.1.1",
     "setuptools>=80.3.1",
 ]
+
+[dependency-groups]
+dev = [
+    "matplotlib>=3.10.3",
+    "numpy>=2.2.5",
+    "pandas>=2.2.3",
+    "seaborn>=0.13.2",
+    "student-performance",
+]
+
+[tool.uv.sources]
+student-performance = { workspace = true }
